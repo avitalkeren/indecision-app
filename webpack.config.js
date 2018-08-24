@@ -1,8 +1,5 @@
 const path = require("path");
 
-path.join(__dirname,"public")
-
-
 module.exports = {
     entry: "./src/app.js",
     output:{
@@ -20,5 +17,15 @@ module.exports = {
     devtool: 'cheap-module-eval-source-map',
     devServer: {
         contentBase: path.join(__dirname, 'public')
+    },
+    resolve: {
+        alias: {
+            'react': 'preact-compat',
+            'react-dom': 'preact-compat'
+        }
+    },
+    externals: {
+        'react': {commonjs: 'react'},
+        'react-dom': {commonjs: 'react-dom'}
     }
 };
