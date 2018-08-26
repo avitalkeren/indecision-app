@@ -1,20 +1,4 @@
 {
-  "dependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.5",
-    "babel-plugin-transform-class-properties": "^6.24.1",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
-    "live-server": "^1.2.0",
-    "react": "^16.4.2",
-    "react-dom": "^16.4.2",
-    "react-modal": "^3.5.1",
-    "react-router-dom": "^4.3.1",
-    "webpack": "^4.17.1",
-    "webpack-cli": "^3.1.0",
-    "webpack-dev-server": "^3.1.5"
-  },
   "name": "indecision-app",
   "version": "1.0.0",
   "main": "index.js",
@@ -26,10 +10,19 @@
     "build": "webpack",
     "dev-server": "webpack-dev-server"
   },
-  "babel": {
-    "presets": [
-      "env",
-      "react"
-    ]
+  "keywords": [],
+  "description": "",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "webpack": "^4.17.1",
+    "webpack-cli": "^3.1.0"
+  },
+  "dependencies": {
+    "webpack-dev-server": "^3.1.6"
   }
 }
